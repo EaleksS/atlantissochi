@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    gap: 1rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .nav {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      display: flex;
+      gap: 3rem;
+
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      li {
+        cursor: pointer;
+
+        @media (min-width: 800px) {
+          transform: all 0.2s ease-in-out;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

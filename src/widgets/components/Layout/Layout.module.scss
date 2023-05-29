@@ -1,0 +1,17 @@
+@import "/src/app/styles/variables";
+
+body {
+  background-color: $bg-color;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+
+  @media (max-width: 1200px) {
+    padding: 0 1rem;
+  }
+}
+

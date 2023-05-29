@@ -1,0 +1,39 @@
+@import "/src/app/styles/variables";
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 900px;
+
+  .img_preview {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .bg {
+    height: 900px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+    background: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  h1,
+  h4 {
+    position: relative;
+  }
+
+  .btn {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+}
